@@ -1,4 +1,4 @@
-const StyleSheet = require("react-native");
+import { StyleSheet } from "react-native";
 
 const {COLORS, SIZES, SHADOWS} = require("../../../../constants");
 
@@ -22,9 +22,9 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  logImage: {
-    width: "70%",
-    height: "70%",
+  logoImage: {
+    width: "50%",
+    height: "50%",
   },
   textContainer: {
     flex: 1,
