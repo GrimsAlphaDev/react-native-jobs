@@ -26,11 +26,9 @@ const useFetch = (endpoint: string, query) => {
         try {
             const response = await axios.request(options);
 
-
             const fetchedData = Array.isArray(response.data.data)
                 ? response.data.data
                 : (response.data.data ? [response.data.data] : []);
-
 
             setData(fetchedData);
             setIsLoading(false);
